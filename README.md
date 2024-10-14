@@ -52,7 +52,7 @@ I am always eager to learn new technologies and take on challenging projects. Pl
 ## Contact
 
 - **GitHub:** [soura07](https://github.com/soura07)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/souradeep07/)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/souradeep07/)
 
 
 Thank you for visiting my portfolio!
