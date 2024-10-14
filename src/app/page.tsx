@@ -72,7 +72,7 @@ const projects = [
     name: 'NextJs Portfolio',
     description: "This website that you are currently on. Built with NextJs, Typescript and deployed on Vercel.",
     tag: 'NextJs | TypeScript',
-    href: 'https://github.com/sour07/soura07',
+    href: 'https://souradeep-tech.netlify.app/',
   },
   {
     name: 'YOOM Online Meeting Platform',

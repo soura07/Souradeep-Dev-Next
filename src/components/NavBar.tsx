@@ -14,7 +14,7 @@ function NavBar() {
             <nav className="flex items-center justify-between max-w-3xl mx-auto p-2 lg:px-3 backdrop-blur-[32px] bg-[rgba(255,255,255,0.85)] shadow-[rgb(228,229,233)_0px_0px_0px_0.5px,rgba(228,229,233,0.6)_0px_0px_0px_1px,rgb(249,249,251)_0px_0px_0px_3.5px,rgb(243,244,247)_0px_0px_0px_4px] rounded-2xl">
                 <div className="flex lg:flex-1">
                     <Link href="/" className="flex items-center gap-x-2">
-                        <Image src="/img/icon.png" width={32} height={32} priority={false} className="rounded-lg" alt="muideen photo" />
+                        <Image src="/img/icon.png" width={32} height={32} priority={false} className="rounded-lg" alt="Souradeep photo" />
                         <span className="hidden lg:block">Souradeep</span>
                     </Link>
                 </div>
