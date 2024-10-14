@@ -218,7 +218,7 @@ function Footer() {
         <div className="grid gap-12 mx-4 text-center">
           <div className="flex flex-col gap-2">
             <span className="font-medium text-lg text-gray-500">
-              Dont't Cry in a Cornar If You want Something Keep Work Hard, be the Best and Achieve it.
+              Don't Cry in a Cornar If You want Something Keep Work Hard, be the Best and Achieve it.
             </span>
             <span className="font-medium text-gray-500">
               - Striver
