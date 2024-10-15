@@ -111,7 +111,7 @@ const projects = [
     name: 'Travel Agency Website',
     description: 'Travel-Agency-Website is a React.js project that incorporates multiple components, allowing users to choose travel dates and destinations. The website provides an interactive and user-friendly experience for planning trips.',
     tag: 'ReactJs | React Hooks | Date-picker library',
-    href: 'https://github.com/mdauthentic/se-resume',
+    href: 'https://github.com/soura07/Travel-Agency-Website',
   },
 
   {
