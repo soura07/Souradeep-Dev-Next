@@ -168,7 +168,7 @@ const stacks = {
   frontend: ['Tailwind', 'HTML', 'CSS', 'Nextjs', 'React'],
   backend: [ 'NodeJs', 'ExpressJs', 'Typescript', 'fast-api'],
   database: ['MySQL','Postgres', 'NoSQL', 'MongoDB'],
-  Tools: ['Git', 'Github', 'Notion'],
+  Tools: ['Git', 'Github', 'Notion', 'Clerk'],
   cicd: ['C++', 'C', 'Java', 'Python']
 }
 
