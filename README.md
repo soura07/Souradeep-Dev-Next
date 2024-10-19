@@ -10,11 +10,11 @@ Hello! I'm a passionate **Software Developer** specializing in **Full Stack Deve
 
 ## Skills
 
-- **Languages:** JavaScript, Python, GoLang, C/C++, HTML/CSS, SQL
+- **Languages:** JavaScript, Python, C/C++, HTML/CSS, SQL
 - **Frameworks/Libraries:** React.js, Redux, Next.js, Node.js, Express.js
 - **Technologies:** MongoDB, Firebase, Docker, Git, RESTful APIs
 - **Cloud Platforms:** Familiarity with cloud technologies
-- **Problem Solving:** Over 1000 algorithmic problems solved on platforms like LeetCode and GfG
+- **Problem Solving:** Over 1000+ algorithmic problems solved on platforms like LeetCode and GfG
 
 
 
