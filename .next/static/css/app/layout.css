@@ -590,9 +590,6 @@ video {
 .max-w-lg {
   max-width: 32rem;
 }
-.max-w-4xl {
-  max-width: 56rem;
-}
 .flex-\[1_0_0px\] {
   flex: 1 0 0px;
 }
@@ -803,9 +800,9 @@ video {
 .font-schibstedGrotesk {
   font-family: var(--schibstedGrotesk);
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -822,18 +819,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .font-medium {
   font-weight: 500;
@@ -866,10 +851,6 @@ video {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
-}
-.text-zinc-800 {
-  --tw-text-opacity: 1;
-  color: rgb(39 39 42 / var(--tw-text-opacity));
 }
 .antialiased {
   -webkit-font-smoothing: antialiased;

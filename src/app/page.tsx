@@ -21,7 +21,7 @@ function Hero() {
           <div className="item space-y-20">
             <div>
               <h1 className="text-4xl">Hey! I'm Souradeep Ghosh</h1>
-              <p className="text-zinc-600">Software <span className="font-bricolage-grostesque text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">Developer</span> based in India</p>
+              <p className="text-zinc-1000">Software <span className="font-bricolage-grostesque text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">Developer</span> based in India</p>
               <Social />
             </div>
           </div>
@@ -33,7 +33,7 @@ function Hero() {
               width={600}
               height={500}
               priority={false}
-              loading="lazy"
+              // loading="lazy"
               // className="object-fit rounded-3xl bg-[rgba(255,255,255,0.85)] shadow-[rgb(228,229,233)_0px_0px_0px_0.5px,rgba(228,229,233,0.6)_0px_0px_0px_1px,rgb(249,249,251)_0px_0px_0px_3.5px,rgb(243,244,247)_0px_0px_0px_4px] origin-bottom -rotate-1"
             />
           </div>
@@ -165,11 +165,11 @@ function Project() {
 }
 
 const stacks = {
-  frontend: ['Tailwind', 'HTML', 'CSS', 'Nextjs', 'React'],
+  frontend: ['Tailwind', 'HTML', 'CSS', 'NextJs', 'ReactJs'],
   backend: [ 'NodeJs', 'ExpressJs', 'Typescript', 'fast-api'],
   database: ['MySQL','Postgres', 'NoSQL', 'MongoDB'],
   Tools: ['Git', 'Github', 'Notion', 'Clerk'],
-  cicd: ['C++', 'C', 'Java', 'Python']
+  cicd: ['C++', 'C', 'Javascript']
 }
 
 const BadgeMarker = ({ heading, items }: { heading: string, items: string[] }) => (
