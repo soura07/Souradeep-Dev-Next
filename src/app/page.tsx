@@ -70,7 +70,7 @@ function About() {
 const projects = [
   {
     name: 'NextJs Portfolio',
-    description: "This website that you are currently on. Built with NextJs, Typescript and deployed on Vercel.",
+    description: "This website that you are currently on. Built with NextJs, Typescript and deployed on netlify.",
     tag: 'NextJs | TypeScript',
     href: 'https://souradeep-tech.netlify.app/',
   },
