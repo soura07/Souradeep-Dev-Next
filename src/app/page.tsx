@@ -6,6 +6,7 @@ export default function Home() {
     <div className="font-schibstedGrotesk">
       <Hero />
       <About />
+      <CodingProfiles />
       <Project />
       <TechStack />
       <Footer />
@@ -66,6 +67,57 @@ function About() {
     </section>
   )
 }
+
+const codingProfiles = [
+  {
+    name: 'LeetCode',
+    description: 'Solved over 600 problems on LeetCode, achieving a top 6% in contests.',
+    href: 'https://leetcode.com/u/souradeep_ghosh/',
+  },
+  {
+    name: 'GeeksforGeeks',
+    description: 'Ranked 25th among 2500+ college-mates, consistently solving complex DSA problems.',
+    href: 'https://www.geeksforgeeks.org/user/souradeep_4n4/',
+  },
+  {
+    name: 'Coding Ninjas',
+    description: 'Solved over 200 problems on Coding Ninjas',
+    href: 'https://www.naukri.com/code360/profile/Souradeep_89',
+  },
+];
+
+function CodingProfiles() {
+  return (
+    <section className="px-6 py-16 text-[#171618]" id="coding-profiles">
+      <div className="mx-auto max-w-3xl">
+        <div className="mx-4">
+          <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
+            <h2 className="text-xl font-medium">Coding <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">Profiles</span></h2>
+          </div>
+
+          <ul role="list" className="divide-y divide-gray-100">
+            {codingProfiles.map((profile) => (
+              <li key={profile.name} className="flex justify-between gap-x-6 py-5">
+                <Link href={profile.href} className="flex justify-between w-full">
+                  <div className="flex min-w-0 gap-x-4">
+                    <div className="min-w-0 flex-auto">
+                      <p className="font-medium text-sm leading-6 text-[#171618]">{profile.name}</p>
+                      <p className="mt-1 text-sm leading-5 text-gray-500">{profile.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
+
 
 const projects = [
   {

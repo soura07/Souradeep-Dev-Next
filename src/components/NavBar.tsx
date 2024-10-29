@@ -3,9 +3,10 @@ import Image from "next/image"
 
 const navigation = [
     { id: 1, name: "About", href: "#about" },
-    { id: 2, name: "Projects", href: "#projects" },
-    { id: 3, name: "Stack", href: "#techstack" },
-    { id: 4, name: "Contact", href: "#" },
+    { id: 2, name: "Coding Profile", href: "#codingProfiles" },
+    { id: 3, name: "Projects", href: "#projects" },
+    { id: 4, name: "Stack", href: "#techstack" },
+    { id: 5, name: "Contact", href: "#" },
 ]
 
 function NavBar() {
