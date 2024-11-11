@@ -53,13 +53,13 @@ function About() {
             <h2 className="text-xl font-medium">Abo<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">ut Me</span></h2>
           </div>
           <div className="text-sm">
-          <p className="text-zinc-600">I am currently a Software Developer with a strong focus on Full Stack Development, particularly using MERN and Next.js. I have experience working on various projects such as <strong>YOOM </strong>(a video conference tool), <strong>MOVIX </strong>(a movie exploration platform), <strong>Crypto Marketplace </strong>(a cryptocurrency data display tool), and more. I also actively contribute to open-source projects and have a passion for backend development and cloud technologies.</p>
+          <p className="text-zinc-600">I am currently a Software Developer with a strong focus on Full Stack Development, particularly using MERN and Next.js. I have experience working on various projects such as <strong>YOOM </strong>(a video conference tool), <strong>MOVIX </strong>(a movie exploration platform), <strong>Crypto Marketplace </strong>(a cryptocurrency data display tool), and more. I also actively contribute to open-source projects and have a passion for backend development.</p>
           <p className="pt-3 text-zinc-600">
-            In 2025, I will complete my Bachelor's degree in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. I have solved over <strong> 1000+ algorithmic</strong> problems on platforms like <strong>LeetCode, Codechef </strong>and <strong>GeeksforGeeks </strong>which have greatly improved my problem-solving and coding skills.
+            In 2025, I will complete my Bachelor's degree in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. I have solved over <strong> 1200+ algorithmic</strong> problems on platforms like <strong>LeetCode, GeeksforGeeks </strong>and <strong>Coding Ninjas</strong>which have greatly improved my problem-solving and coding skills.
           </p>
-          <p className="pt-3 text-zinc-600">
-            I have participated in multiple hackathons, such as Hack4Bengal, where I led my team to secure 4th place out of 50 teams. Additionally, I have contributed to <strong>open-source projects </strong>and communities like Social Winter of Code and GirlScript Summer of Code, gaining hands-on experience in real-world projects.
-          </p>
+          {/* <p className="pt-3 text-zinc-600">
+            I have participated in multiple hackathons, such as Hack4Bengal, where I led my team to secure 4th place out of 50 teams. Additionally, I have contributed to <strong>open-source projects </strong>
+          </p> */}
 
           </div>
         </div>
@@ -76,7 +76,7 @@ const codingProfiles = [
   },
   {
     name: 'GeeksforGeeks',
-    description: 'Ranked 25th among 2500+ college-mates, consistently solving complex DSA problems.',
+    description: 'Solved over 400 problems on GeeksforGeeks. Ranked 25th among 2500+ college-mates, consistently solving complex DSA problems.',
     href: 'https://www.geeksforgeeks.org/user/souradeep_4n4/',
   },
   {
