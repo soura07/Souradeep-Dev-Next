@@ -53,9 +53,10 @@ function About() {
             <h2 className="text-xl font-medium">Abo<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">ut Me</span></h2>
           </div>
           <div className="text-sm">
-          <p className="text-zinc-600">I am currently a Software Developer with a strong focus on Full Stack Development, particularly using MERN and Next.js. I have experience working on various projects such as <strong>YOOM </strong>(a video conference tool), <strong>MOVIX </strong>(a movie exploration platform), <strong>Crypto Marketplace </strong>(a cryptocurrency data display tool), and more. I also actively contribute to open-source projects and have a passion for backend development.</p>
+          <p className="text-zinc-600">I am a Software Developer specializing in <strong> Full Stack Development </strong> with expertise in <strong> MERN and Next.js.</strong> With a strong foundation in problem-solving, I’ve solved <strong> 1500+ algorithmic </strong> challenges on platforms like <strong> LeetCode and GeeksforGeeks</strong>, enhancing my analytical and technical skills. I combine a technical background with a passion for backend development and building scalable, impactful solutions. Dedicated
+             to continuous learning, I thrive in collaborative environments and aim to deliver value-driven results in any corporate setting.</p>
           <p className="pt-3 text-zinc-600">
-            In 2025, I will complete my Bachelor's degree in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. I have solved over <strong> 1200+ algorithmic</strong> problems on platforms like <strong>LeetCode, GeeksforGeeks </strong>and <strong>Coding Ninjas</strong>which have greatly improved my problem-solving and coding skills.
+            In <strong> 2025</strong>, I will complete my <strong> B.Tech in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. </strong> I have solved over <strong> 1200+ algorithmic</strong> problems on platforms like <strong>LeetCode, GeeksforGeeks </strong>and <strong>Coding Ninjas</strong>which have greatly improved my problem-solving and coding skills.
           </p>
           {/* <p className="pt-3 text-zinc-600">
             I have participated in multiple hackathons, such as Hack4Bengal, where I led my team to secure 4th place out of 50 teams. Additionally, I have contributed to <strong>open-source projects </strong>
@@ -72,17 +73,17 @@ const codingProfiles = [
   {
     name: 'LeetCode',
     description: 'Solved over 600 problems on LeetCode, achieving a top 6% in contests.',
-    href: 'https://leetcode.com/u/souradeep_ghosh/',
+    href: '#leetcode',
   },
   {
     name: 'GeeksforGeeks',
     description: 'Solved over 400 problems on GeeksforGeeks. Ranked 25th among 2500+ college-mates, consistently solving complex DSA problems.',
-    href: 'https://www.geeksforgeeks.org/user/souradeep_4n4/',
+    href: '#geeksforgeeks',
   },
   {
     name: 'Coding Ninjas',
     description: 'Solved over 200 problems on Coding Ninjas',
-    href: 'https://www.naukri.com/code360/profile/Souradeep_89',
+    href: '#codingninjas',
   },
 ];
 
@@ -217,11 +218,12 @@ function Project() {
 }
 
 const stacks = {
+  cloud: ['AWS', 'GCP'],
   frontend: ['Tailwind', 'HTML', 'CSS', 'NextJs', 'ReactJs'],
   backend: [ 'NodeJs', 'ExpressJs', 'Typescript', 'fast-api'],
   database: ['MySQL','Postgres', 'NoSQL', 'MongoDB'],
   Tools: ['Git', 'Github', 'Notion', 'Clerk'],
-  cicd: ['C++', 'C', 'Javascript']
+  cicd: ['C/C++', 'Java', 'Python', 'Javascript']
 }
 
 const BadgeMarker = ({ heading, items }: { heading: string, items: string[] }) => (
@@ -252,10 +254,12 @@ function TechStack() {
           {/* Stack */}
           <div className="flex flex-col gap-4 py-4">
             <BadgeMarker heading="Programming Language" items={stacks.cicd} />
-            <BadgeMarker heading="Frontend/Crossplatform" items={stacks.frontend} />
+            <BadgeMarker heading="Frontend" items={stacks.frontend} />
             <BadgeMarker heading="Backend" items={stacks.backend} />
             <BadgeMarker heading="Database" items={stacks.database} />
             <BadgeMarker heading="Tools" items={stacks.Tools} />
+            <BadgeMarker heading="Cloud" items={stacks.cloud} />
+
           </div>
         </div>
       </div>
@@ -270,10 +274,10 @@ function Footer() {
         <div className="grid gap-12 mx-4 text-center">
           <div className="flex flex-col gap-2">
             <span className="font-medium text-lg text-gray-500">
-              Don't Cry in a Corner If You want Something Keep Work Hard, be the Best and Achieve it.
+            "Arise, awake, and stop not until the goal is reached"
             </span>
             <span className="font-medium text-gray-500">
-              - Striver
+              - Swami Vivekananda
             </span>
           </div>
 
