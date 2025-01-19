@@ -56,7 +56,7 @@ function About() {
           <p className="text-zinc-600">I am a Software Developer specializing in <strong> Full Stack Development </strong> with expertise in <strong> MERN and Next.js.</strong> With a strong foundation in problem-solving, I’ve solved <strong> 1500+ algorithmic </strong> challenges on platforms like <strong> LeetCode and GeeksforGeeks</strong>, enhancing my analytical and technical skills. I combine a technical background with a passion for backend development and building scalable, impactful solutions. Dedicated
              to continuous learning, I thrive in collaborative environments and aim to deliver value-driven results in any corporate setting.</p>
           <p className="pt-3 text-zinc-600">
-            In <strong> 2025</strong>, I will complete my <strong> B.Tech in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. </strong> I have solved over <strong> 1200+ algorithmic</strong> problems on platforms like <strong>LeetCode, GeeksforGeeks </strong>and <strong>Coding Ninjas</strong>which have greatly improved my problem-solving and coding skills.
+            In <strong> 2025</strong>, I will complete my <strong> B.Tech in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. </strong>
           </p>
           {/* <p className="pt-3 text-zinc-600">
             I have participated in multiple hackathons, such as Hack4Bengal, where I led my team to secure 4th place out of 50 teams. Additionally, I have contributed to <strong>open-source projects </strong>
@@ -69,10 +69,10 @@ function About() {
   )
 }
 
-const codingProfiles = [
+const codingprofiles = [
   {
     name: 'LeetCode',
-    description: 'Solved over 600 problems on LeetCode, achieving a top 6% in contests.',
+    description: 'Maintained a streak of solving problems daily for 365 days on LeetCode, solving over 650+ problems and demonstrating consistency and dedication to continuous learning',
     href: '#leetcode',
   },
   {
@@ -89,7 +89,7 @@ const codingProfiles = [
 
 function CodingProfiles() {
   return (
-    <section className="px-6 py-16 text-[#171618]" id="coding-profiles">
+    <section className="px-6 py-16 text-[#171618]" id="codingprofiles">
       <div className="mx-auto max-w-3xl">
         <div className="mx-4">
           <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
@@ -97,7 +97,7 @@ function CodingProfiles() {
           </div>
 
           <ul role="list" className="divide-y divide-gray-100">
-            {codingProfiles.map((profile) => (
+            {codingprofiles.map((profile) => (
               <li key={profile.name} className="flex justify-between gap-x-6 py-5">
                 <Link href={profile.href} className="flex justify-between w-full">
                   <div className="flex min-w-0 gap-x-4">
