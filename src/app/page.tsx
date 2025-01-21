@@ -72,18 +72,18 @@ function About() {
 const codingprofiles = [
   {
     name: 'LeetCode',
-    description: 'Maintained a streak of solving problems daily for 365 days on LeetCode, solving over 650+ problems and demonstrating consistency and dedication to continuous learning',
-    href: '#leetcode',
+    description: '"Maintained a streak of solving problems daily for 365 days on LeetCode, solving over 650+ problems and demonstrating consistency and dedication to continuous learning',
+    href: 'https://leetcode.com/u/souradeep_ghosh/',
   },
   {
     name: 'GeeksforGeeks',
     description: 'Solved over 400 problems on GeeksforGeeks. Ranked 25th among 2500+ college-mates, consistently solving complex DSA problems.',
-    href: '#geeksforgeeks',
+    href: 'https://www.geeksforgeeks.org/user/souradeep_4n4/?',
   },
   {
     name: 'Coding Ninjas',
     description: 'Solved over 200 problems on Coding Ninjas',
-    href: '#codingninjas',
+    href: 'https://www.naukri.com/code360/profile/Souradeep_89',
   },
 ];
 
