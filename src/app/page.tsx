@@ -140,12 +140,12 @@ const projects = [
     tag: 'ReactJs | Redux | Material-UI | API',
     href: 'https://github.com/soura07/MOVIX-ENHANCED-MOVIE-RATINGS-AND-CAST-INSIGHTS',
   },
-  {
-    name: 'Study Notion',
-    description: "Study Notion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.",
-    tag: 'ReactJs | NodeJs | ExpressJs | MongoDB | API',
-    href: 'https://github.com/soura07/Study-Notion',
-  },
+  // {
+  //   name: 'Study Notion',
+  //   description: "Study Notion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.",
+  //   tag: 'ReactJs | NodeJs | ExpressJs | MongoDB | API',
+  //   href: 'https://github.com/soura07/Study-Notion',
+  // },
   {
     name: 'Crypto Market Place Website',
     description: 'The Crypto Marketplace is a cryptocurrency platform built with ReactJS, React Router, and CoinGecko API, offering real-time data, price charts, market trends, and responsive design optimized for mobile and desktop views.',
