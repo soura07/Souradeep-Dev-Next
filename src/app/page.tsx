@@ -131,47 +131,53 @@ const projects = [
     name: 'YOOM Online Meeting Platform',
     description: "Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, scheduling meetings, screen sharing, and managing participants.",
     tag: 'NextJs | TypeScript | Clerk | getStream',
-    href: 'https://github.com/soura07/YOOM_Online_Meeting_Platform',
+    href: 'https://yoom-online-meeting-platform.vercel.app/',
     
   },
   {
     name: 'MOVIX',
     description: "MOVIX is a platform built with React and Redux, enabling users to explore movies and TV shows through trailers, cast details, and robust search features, using the TMDB API for comprehensive data.",
     tag: 'ReactJs | Redux | Material-UI | API',
-    href: 'https://github.com/soura07/MOVIX-ENHANCED-MOVIE-RATINGS-AND-CAST-INSIGHTS',
+    href: 'https://movix2024.netlify.app/',
   },
-  // {
-  //   name: 'Study Notion',
-  //   description: "Study Notion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.",
-  //   tag: 'ReactJs | NodeJs | ExpressJs | MongoDB | API',
-  //   href: 'https://github.com/soura07/Study-Notion',
-  // },
+  {
+    name: 'Study Notion',
+    description: "Study Notion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.",
+    tag: 'ReactJs | NodeJs | ExpressJs | MongoDB | API',
+    href: 'https://github.com/soura07/Study-Notion',
+  },
+  {
+    name: 'MockMate AI - An AI Mock Interview Platform',
+    description: " MockMate-AI is an AI interview coach that simulates interviews and delivers instant, personalized feedback.",
+    tag: 'ReactJs | Clerk | Drizzle | Neon PostgreSQL | Gemini API',
+    href: 'https://mock-mate-ai-silk.vercel.app/',
+  },
   {
     name: 'Crypto Market Place Website',
     description: 'The Crypto Marketplace is a cryptocurrency platform built with ReactJS, React Router, and CoinGecko API, offering real-time data, price charts, market trends, and responsive design optimized for mobile and desktop views.',
     tag: 'ReactJs | Google-Charts | Coingecko-API',
-    href: 'https://github.com/soura07/Crypto-Market-Place-Website',
+    href: 'https://crypto-market-place-website.vercel.app/',
   },
 
   {
     name: 'Shopping Cart',
     description: 'Shopping-Cart is a React.js project using Redux and the Store API. Users can add items to their cart, view notifications for actions, and remove items from the cart, providing a smooth and responsive shopping experience.',
     tag: 'ReactJs | Redux | StoreAPI',
-    href: 'https://github.com/soura07/Shopping-Cart',
+    href: 'https://shopping-cart-soura07.vercel.app/',
   },
 
   {
     name: 'Travel Agency Website',
     description: 'Travel-Agency-Website is a React.js project that incorporates multiple components, allowing users to choose travel dates and destinations. The website provides an interactive and user-friendly experience for planning trips.',
     tag: 'ReactJs | React Hooks | Date-picker library',
-    href: 'https://github.com/soura07/Travel-Agency-Website',
+    href: 'https://travel-agency-website-mauve.vercel.app/',
   },
 
   {
     name: 'Typing Master',
     description: 'Typing Mater is a JavaScript-based project where users can assess their typing speed. It provides real-time feedback on words per minute (WPM) and accuracy, making it a simple and interactive tool to improve typing skills',
     tag: 'HTML | CSS | VanilaJs',
-    href: 'https://github.com/soura07/Typing-Master',
+    href: 'https://typing-master-one.vercel.app/',
   },
 
 
@@ -223,7 +229,7 @@ const stacks = {
   backend: [ 'NodeJs', 'ExpressJs', 'Typescript', 'fast-api'],
   database: ['MySQL','Postgres', 'NoSQL', 'MongoDB'],
   Tools: ['Git', 'Github', 'Notion', 'Clerk'],
-  cicd: ['C/C++', 'Java', 'Python', 'Javascript']
+  cicd: ['C/C++', 'Python', 'Javascript']
 }
 
 const BadgeMarker = ({ heading, items }: { heading: string, items: string[] }) => (
