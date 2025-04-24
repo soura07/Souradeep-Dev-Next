@@ -6,6 +6,7 @@ export default function Home() {
     <div className="font-schibstedGrotesk">
       <Hero />
       <About />
+      <Resume />
       <CodingProfiles />
       <Project />
       <TechStack />
@@ -44,6 +45,45 @@ function Hero() {
   )
 }
 
+function Resume() {
+  return (
+    <section className="px-6 py-16 text-[#171618]" id="resume">
+      <div className="mx-auto max-w-3xl">
+        <div className="grid gap-4 mx-4">
+          <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
+            <h2 className="text-xl font-medium">
+              Re<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">sume</span>
+            </h2>
+          </div>
+
+          <div className="text-sm">
+            <p className="text-zinc-600">
+              <strong>Here is my resume </strong>
+            </p>
+            <p className="pt-3 text-zinc-600">
+            Explore my portfolio to see how I bring ideas to life—download my resume to dive deeper into my skills and experience.
+            </p>
+
+            {/* Resume download button */}
+            <div className="pt-6">
+              <a
+                href="https://drive.google.com/file/d/1CCnLP0fz1uVFQAZxaI_Gor4XOCSGgc9X/view?usp=sharing" // Update with your actual path or external URL
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-[#171618] text-white px-4 py-2 rounded-lg text-sm hover:bg-zinc-800 transition"
+              >
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 function About() {
   return (
     <section className="px-6 py-16 text-[#171618]" id="about">
@@ -56,7 +96,7 @@ function About() {
           <p className="text-zinc-600">I am a Software Developer specializing in <strong> Full Stack Development </strong> with expertise in <strong> MERN and Next.js.</strong> With a strong foundation in problem-solving, I’ve solved <strong> 1500+ algorithmic </strong> challenges on platforms like <strong> LeetCode and GeeksforGeeks</strong>, enhancing my analytical and technical skills. I combine a technical background with a passion for backend development and building scalable, impactful solutions. Dedicated
              to continuous learning, I thrive in collaborative environments and aim to deliver value-driven results in any corporate setting.</p>
           <p className="pt-3 text-zinc-600">
-            In <strong> 2025</strong>, I will complete my <strong> B.Tech in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. </strong>
+            In <strong> June, 2025</strong>, I will complete my <strong> B.Tech in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. </strong>
           </p>
           {/* <p className="pt-3 text-zinc-600">
             I have participated in multiple hackathons, such as Hack4Bengal, where I led my team to secure 4th place out of 50 teams. Additionally, I have contributed to <strong>open-source projects </strong>
@@ -69,10 +109,12 @@ function About() {
   )
 }
 
+
+
 const codingprofiles = [
   {
     name: 'LeetCode',
-    description: '"Maintained a streak of solving problems daily for 365 days on LeetCode, solving over 650+ problems and demonstrating consistency and dedication to continuous learning',
+    description: '"Maintained a streak of solving problems daily for 365 days on LeetCode, solving over 800+ problems and demonstrating consistency and dedication to continuous learning',
     href: 'https://leetcode.com/u/souradeep_ghosh/',
   },
   {
@@ -312,7 +354,7 @@ function Social() {
           </path>
         </svg>
       </Link>
-      <Link className="inline-flex justify-center items-center rounded-xl p-2 bg-[#171618] text-white hover:bg-zinc-700 focus-visible:outline" href="mailto:iamsouradeep99@gmail.com" title="email address">
+      <Link className="inline-flex justify-center items-center rounded-xl p-2 bg-[#171618] text-white hover:bg-zinc-700 focus-visible:outline" href="mailto:souradeepg48@gmail.com" title="email address">
   <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="currentColor">
     <path d="M12 13.5L2 7v10c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2V7l-10 6.5zM12 11L22 4H2l10 7z" />
   </svg>
