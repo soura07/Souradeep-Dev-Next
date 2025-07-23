@@ -67,7 +67,7 @@ function Resume() {
             {/* Resume download button */}
             <div className="pt-6">
               <a
-                href="https://drive.google.com/file/d/1CCnLP0fz1uVFQAZxaI_Gor4XOCSGgc9X/view?usp=sharing" // Update with your actual path or external URL
+                href="https://drive.google.com" // Update with your actual path or external URL
                 download
                 target="_blank"
                 rel="noopener noreferrer"
