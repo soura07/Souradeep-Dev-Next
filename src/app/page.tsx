@@ -23,7 +23,7 @@ function Hero() {
           <div className="item space-y-20">
             <div>
               <h1 className="text-4xl">Hey! I'm Souradeep Ghosh</h1>
-              <p className="text-zinc-1000">Software <span className="font-bricolage-grostesque text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">Developer</span> based in India</p>
+              <p className="text-zinc-1000">Software <span className="font-bricolage-grostesque text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">Developer</span> based in California, US</p>
               <Social />
             </div>
           </div>
