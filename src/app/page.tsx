@@ -95,7 +95,7 @@ function About() {
           <p className="text-zinc-600">I am a Software Developer specializing in <strong> Full Stack Development </strong> with expertise in <strong> MERN and Next.js.</strong> With a strong foundation in problem-solving, I’ve solved <strong> 1500+ algorithmic </strong> challenges on platforms like <strong> LeetCode and GeeksforGeeks</strong>, enhancing my analytical and technical skills. I combine a technical background with a passion for backend development and building scalable, impactful solutions. Dedicated
              to continuous learning, I thrive in collaborative environments and aim to deliver value-driven results in any corporate setting.</p>
           <p className="pt-3 text-zinc-600">
-            In <strong> June, 2025</strong>, I will complete my <strong> B.Tech in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India. </strong>
+            I <strong> have completed my B.Tech in Electronics and Communications Engineering from Narula Institute of Technology, West Bengal, India in June, 2025</strong>
           </p>
           {/* <p className="pt-3 text-zinc-600">
             I have participated in multiple hackathons, such as Hack4Bengal, where I led my team to secure 4th place out of 50 teams. Additionally, I have contributed to <strong>open-source projects </strong>
