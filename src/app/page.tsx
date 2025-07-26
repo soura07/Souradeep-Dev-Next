@@ -6,7 +6,6 @@ export default function Home() {
     <div className="font-schibstedGrotesk">
       <Hero />
       <About />
-      <Resume />
       <CodingProfiles />
       <Project />
       <TechStack />
@@ -45,43 +44,43 @@ function Hero() {
   )
 }
 
-function Resume() {
-  return (
-    <section className="px-6 py-16 text-[#171618]" id="resume">
-      <div className="mx-auto max-w-3xl">
-        <div className="grid gap-4 mx-4">
-          <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
-            <h2 className="text-xl font-medium">
-              Re<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">sume</span>
-            </h2>
-          </div>
+// function Resume() {
+//   return (
+//     <section className="px-6 py-16 text-[#171618]" id="resume">
+//       <div className="mx-auto max-w-3xl">
+//         <div className="grid gap-4 mx-4">
+//           <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
+//             <h2 className="text-xl font-medium">
+//               Re<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">sume</span>
+//             </h2>
+//           </div>
 
-          <div className="text-sm">
-            <p className="text-zinc-600">
-              <strong>Here is my resume </strong>
-            </p>
-            <p className="pt-3 text-zinc-600">
-            Explore my portfolio to see how I bring ideas to life—download my resume to dive deeper into my skills and experience.
-            </p>
+//           <div className="text-sm">
+//             <p className="text-zinc-600">
+//               <strong>Here is my resume </strong>
+//             </p>
+//             <p className="pt-3 text-zinc-600">
+//             Explore my portfolio to see how I bring ideas to life—download my resume to dive deeper into my skills and experience.
+//             </p>
 
-            {/* Resume download button */}
-            <div className="pt-6">
-              <a
-                href="https://drive.google.com" // Update with your actual path or external URL
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-[#171618] text-white px-4 py-2 rounded-lg text-sm hover:bg-zinc-800 transition"
-              >
-                Download Resume
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+//             {/* Resume download button */}
+//             <div className="pt-6">
+//               <a
+//                 href="https://drive.google.com" // Update with your actual path or external URL
+//                 download
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="inline-flex items-center justify-center bg-[#171618] text-white px-4 py-2 rounded-lg text-sm hover:bg-zinc-800 transition"
+//               >
+//                 Download Resume
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 
 function About() {
