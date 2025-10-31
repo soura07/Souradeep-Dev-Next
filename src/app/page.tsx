@@ -391,12 +391,12 @@ function Project() {
 }
 
 const stacks = {
-  cloud: ['AWS', 'GCP'],
+  cloud: ['AWS S3', 'AWS Amplify', 'AWS Cognito','AWS SES', 'AWS Lamda' ,'AWS Lex'],
   frontend: ['Tailwind', 'HTML', 'CSS', 'NextJs', 'ReactJs'],
   backend: [ 'NodeJs', 'ExpressJs', 'Typescript', 'fast-api'],
   database: ['MySQL','Postgres', 'NoSQL', 'MongoDB'],
   Tools: ['Git', 'Github', 'Notion', 'Clerk'],
-  cicd: ['C/C++', 'Python', 'Javascript']
+  cicd: ['C/C++', 'Python', 'Javascript', 'TypeScript']
 }
 
 const BadgeMarker = ({ heading, items }: { heading: string, items: string[] }) => (
