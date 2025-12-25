@@ -1,22 +1,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import InteractiveBackground from '@/components/ui/InteractiveBackground'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { FiCode, FiCpu, FiZap, FiTrendingUp } from 'react-icons/fi'
 
 export default function Home() {
   return (
-    <div className="font-schibstedGrotesk relative min-h-screen transition-colors duration-300">
-      <InteractiveBackground />
-      <div className="relative z-10">
-        <Hero />
-        <About />
-        <Timeline />
-        <CodingProfiles />
-        <Project />
-        <TechStack />
-        <Footer />
-      </div>
+    <div className="font-schibstedGrotesk relative min-h-screen transition-colors duration-300 z-10">
+      <Hero />
+      <About />
+      <Timeline />
+      <CodingProfiles />
+      <Project />
+      <TechStack />
+      <Footer />
     </div>
   )
 }
@@ -101,7 +97,10 @@ function About() {
           </CardHeader>
           <CardContent>
             <div className="text-sm space-y-4">
-              <p className="text-zinc-300">I am a Software Developer specializing in <strong className="text-white"> Full Stack Development </strong> with expertise in <strong className="text-white"> MERN and Next.js.</strong> Currently working as a <strong className="text-cyan-400"> Cloud & AI Engineer </strong> at <strong className="text-cyan-400"> Cloudain LLC</strong>, building scalable solutions with <strong className="text-white"> Next.js, Astro.js, TypeScript, AWS S3, and AWS Cognito.</strong> With a strong foundation in problem-solving, I've solved <strong className="text-white"> 1500+ algorithmic </strong> challenges on platforms like <strong className="text-white"> LeetCode and GeeksforGeeks</strong>, enhancing my analytical and technical skills. I combine a technical background with a passion for backend development and building scalable, impactful solutions. Dedicated to continuous learning, I thrive in collaborative environments and aim to deliver value-driven results in any corporate setting.</p>
+              <p className="text-zinc-300">I am a <strong className="text-white">Cloud & AI Engineer</strong> and <strong className="text-white">Full Stack Software Developer</strong> with hands-on experience building <strong className="text-white">scalable, serverless, and AI-driven platforms</strong> for SaaS and in-house enterprise products. Currently, I work at <strong className="text-cyan-400">Cloudain LLC (USA)</strong>, where I design and develop backend services and intelligent systems using <strong className="text-white">AWS Lambda, API Gateway, DynamoDB, and AWS Bedrock</strong>.</p>
+              <p className="text-zinc-300">My work focuses on building <strong className="text-white">event-driven, secure backend architectures</strong> that power <strong className="text-white">agentic AI chatbots, automation workflows, and contact center platforms</strong>—ensuring high availability, low latency, and seamless integrations. I actively contribute to production-grade systems used across multiple AI-powered products.</p>
+              <p className="text-zinc-300">Previously, I worked as a <strong className="text-white">Frontend Engineer – AI & SaaS Platforms</strong>, where I collaborated closely with product and design teams to build high-performance, responsive interfaces using <strong className="text-white">Next.js, TypeScript, and modern UI frameworks</strong>. I contributed end-to-end from component architecture and UX implementation to production deployment—across several cloud and AI products.</p>
+              <p className="text-zinc-300">With a strong foundation in <strong className="text-white">data structures, algorithms, and problem-solving</strong> (<strong className="text-white">1500+ problems solved on LeetCode & GeeksforGeeks</strong>), I bring an engineering-first mindset to every system I build. I enjoy working at the intersection of <strong className="text-white">Cloud, Backend, and AI</strong>, continuously learning and delivering impactful, scalable solutions in collaborative environments.</p>
             </div>
           </CardContent>
         </Card>
@@ -116,7 +115,7 @@ const timelineData = [
     title: 'B.Tech in Electronics and Communications Engineering',
     institution: 'Narula Institute of Technology, MAKAUT',
     location: 'West Bengal, India',
-    period: '2021 - 2025',
+    period: 'Aug 2021 - Jun 2025',
     description: 'Graduated with comprehensive knowledge in electronics, communications, and software development.'
   },
   {
@@ -125,7 +124,11 @@ const timelineData = [
     institution: 'Cloudain LLC',
     location: 'California, US',
     period: 'July 2025 - Present',
-    description: 'Working on cloud infrastructure and AI solutions, specializing in scalable architectures and machine learning implementations.'
+    description: [
+      { text: '✦ Currently working on building scalable backend services using ', highlights: ['AWS Lambda', 'API Gateway', 'DynamoDB'], suffix: ' to support SaaS and in-house Contact Center platforms.' },
+      { text: '✦ Implementing Agentic AI Chatbots leveraging ', highlights: ['AWS Bedrock'], suffix: ' to automate customer interactions, workflows, and intelligent task execution.' },
+      { text: '✦ Designing secure, event-driven serverless architectures to ensure high availability, low latency, and seamless system integrations.', highlights: [], suffix: '' }
+    ]
   }
 ];
 
@@ -173,7 +176,28 @@ function Timeline() {
                     <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
                     <p className="text-sm font-medium text-cyan-400 mb-1">{item.institution}</p>
                     <p className="text-xs text-zinc-400 mb-3">📍 {item.location}</p>
-                    <p className="text-sm text-zinc-300 leading-relaxed">{item.description}</p>
+                    {Array.isArray(item.description) ? (
+                      <ul className="text-sm text-zinc-300 leading-relaxed space-y-2">
+                        {item.description.map((point, i) => (
+                          <li key={i}>
+                            {typeof point === 'string' ? point : (
+                              <>
+                                {point.text}
+                                {point.highlights.map((h, idx) => (
+                                  <span key={idx}>
+                                    <strong className="text-cyan-400">{h}</strong>
+                                    {idx < point.highlights.length - 1 && ', '}
+                                  </span>
+                                ))}
+                                {point.suffix}
+                              </>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-sm text-zinc-300 leading-relaxed">{item.description}</p>
+                    )}
                   </CardContent>
                 </Card>
               </div>
@@ -190,7 +214,7 @@ const codingprofiles = [
     name: 'LeetCode',
     description: 'Maintained a streak of solving problems daily for 365 days on LeetCode, solving over 800+ problems and demonstrating consistency and dedication to continuous learning',
     href: 'https://leetcode.com/u/souradeep_ghosh/',
-    icon: FiCode,
+    logo: '/img/leetcode.png',
     stats: '800+ Problems',
     color: 'from-orange-400 to-orange-600'
   },
@@ -198,7 +222,7 @@ const codingprofiles = [
     name: 'GeeksforGeeks',
     description: 'Solved over 400 problems on GeeksforGeeks. Ranked 25th among 2500+ college-mates, consistently solving complex DSA problems.',
     href: 'https://www.geeksforgeeks.org/user/souradeep_4n4/?',
-    icon: FiCpu,
+    logo: '/img/gfg.jpg',
     stats: 'Rank #25/2500+',
     color: 'from-green-400 to-green-600'
   },
@@ -227,9 +251,15 @@ function CodingProfiles() {
               <Card key={profile.name} className="bg-zinc-100/50 dark:bg-zinc-900/50 backdrop-blur-sm border-zinc-200 dark:border-zinc-800 hover:border-cyan-400 dark:hover:border-zinc-700 transition-all duration-300 hover:scale-105 group flex flex-col h-full">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
-                    <div className={`w-12 h-12 bg-gradient-to-r ${profile.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <profile.icon className="w-6 h-6 text-white" />
-                    </div>
+                    {'logo' in profile && profile.logo ? (
+                      <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <Image src={profile.logo} alt={profile.name} width={48} height={48} className="w-full h-full object-cover" />
+                      </div>
+                    ) : 'icon' in profile && profile.icon ? (
+                      <div className={`w-12 h-12 bg-gradient-to-r ${profile.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                        <profile.icon className="w-6 h-6 text-white" />
+                      </div>
+                    ) : null}
                     <span className="text-xs font-medium text-cyan-600 dark:text-cyan-400 bg-cyan-100 dark:bg-cyan-900/30 px-2 py-1 rounded-full">
                       {profile.stats}
                     </span>

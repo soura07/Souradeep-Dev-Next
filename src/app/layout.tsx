@@ -4,6 +4,9 @@ import { schibstedGrotesk } from '@/fonts/font'
 import './globals.css'
 import { NavBar } from '@/components/NavBar';
 import { ThemeProvider } from '@/contexts/ThemeContext';
+import StyledComponentsRegistry from '@/lib/registry';
+import LoadingWrapper from '@/components/LoadingWrapper';
+import InteractiveBackground from '@/components/ui/InteractiveBackground';
 
 
 export const metadata: Metadata = {
@@ -28,11 +31,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${schibstedGrotesk.variable} antialiased min-h-screen transition-colors duration-300`}>
-        <ThemeProvider>
-          <NavBar />
-          {children}
-          <SpeedInsights />
-        </ThemeProvider>
+        <StyledComponentsRegistry>
+          <ThemeProvider>
+            <InteractiveBackground />
+            <LoadingWrapper>
+              <NavBar />
+              {children}
+              <SpeedInsights />
+            </LoadingWrapper>
+          </ThemeProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   )
